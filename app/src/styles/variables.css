@@ -1,0 +1,42 @@
+:root {
+  --color-primary: #2563eb;
+  --color-secondary: #f59e0b;
+  --color-bg: #f8fafc;
+  --color-text: #1e293b;
+
+  /* Derived / structural tokens — always reference the four above where possible */
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-border-input: #cbd5e1;
+  --color-error: #dc2626;
+  --color-overlay: rgba(0, 0, 0, 0.4);
+  --color-shadow-sm: rgba(0, 0, 0, 0.07);
+  --color-shadow-md: rgba(0, 0, 0, 0.12);
+}
+
+[data-theme='dark'] {
+  --color-primary: #3b82f6;
+  --color-secondary: #fbbf24;
+  --color-bg: #0f172a;
+  --color-text: #f1f5f9;
+
+  --color-surface: #1e293b;
+  --color-border: #334155;
+  --color-border-input: #475569;
+  --color-error: #f87171;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+  --color-shadow-sm: rgba(0, 0, 0, 0.3);
+  --color-shadow-md: rgba(0, 0, 0, 0.5);
+}
+
+/* Shared utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
